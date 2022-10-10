@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let a;
+        do {
+            a = prompt("Saisissez un nomre entier");
+        } while (isNaN(a) || a % 1 !== 0);
+
+        document.write("<h4>La table de multiplication du nombre: " + a + "</h4>")
+        document.write("<table border >");
+
+        for (let i = 1; i <= 10; i++) {
+            document.write("<tr>");
+            document.write("<td>" + a + " x " + i + " =</td>");
+            document.write("<td>" + a * i + "</td>");
+            document.write("</tr>");
+        }
+        
+        document.write("</table>");
+    </script>
+</body>
+
+</html>
